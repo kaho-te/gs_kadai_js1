@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/style_piano.css">
+  <title>音当てゲーム</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title">音当てゲーム</div>
+    <div class="quiz">
+      <div class="score">
+        <div class="challenge">チャレンジした回数：<span>0</span> 回</div>
+        <div class="point">正解した回数：<span>0</span> 回</div>
+      </div>
+      <div class="mode">
+        <label><input type="radio" name="mode" value="single" checked> 単音モード</label>
+        <label><input type="radio" name="mode" value="harmony"> 和音モード</label>
+      </div>
+      <div class="chord">
+        <p class="chord_text">🎶</p>
+      </div>
+      <div class="rabit">
+        <img class="rabit_img" src="./img/doubutu_piano_usagi.png" alt="">
+        <ul class="carrot_list">
+          <li><img class="carrot_img" src="./img/yasai_ninzin.png" alt=""></li>
+          <li><img class="carrot_img" src="./img/yasai_ninzin.png" alt=""></li>
+          <li><img class="carrot_img" src="./img/yasai_ninzin.png" alt=""></li>
+          <li><img class="carrot_img" src="./img/yasai_ninzin.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="input_area">
+        <p class="input"></p>
+        <img class="check" src="./img/check_play.png" alt="">
+      </div>
+    </div>
+
+    <ul id="keyboard">
+      <li data-id="A3" class="whitekey"></li>
+      <li data-id="A#3" class="blackkey"></li>
+      <li data-id="B3" class="whitekey"></li>
+      <li data-id="C4" class="whitekey"></li>
+      <li data-id="C#4" class="blackkey"></li> 
+      <li data-id="D4" class="whitekey"></li>
+      <li data-id="D#4" class="blackkey"></li> 
+      <li data-id="E4" class="whitekey"></li>
+      <li data-id="F4" class="whitekey"></li>
+      <li data-id="F#4" class="blackkey"></li>
+      <li data-id="G4" class="whitekey"></li>
+      <li data-id="G#4" class="blackkey"></li>
+      <li data-id="A4" class="whitekey"></li>
+      <li data-id="A#4" class="blackkey"></li>
+      <li data-id="B4" class="whitekey"></li>
+      <li data-id="C5" class="whitekey"></li>
+      <li data-id="C#5" class="blackkey"></li> 
+      <li data-id="D5" class="whitekey"></li>
+      <li data-id="D#5" class="blackkey"></li> 
+      <li data-id="E5" class="whitekey"></li>
+  </ul>
+  <div class="operation">
+    <div class="start_view">
+      <button class="start">はじめる</button>
+    </div>
+    <div class="game_view">
+      <button class="more">もう一回</button>
+      <button class="answer">決定</button>
+      <button class="next">次へ</button>
+    </div>
+    
+  </div>
+</div>
+ <script src="js/jquery-2.1.3.min.js"></script>
+ <script src="js/main.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.1.25/Tone.js"></script>
+</body>
+</html>

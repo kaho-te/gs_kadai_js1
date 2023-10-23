@@ -1,0 +1,205 @@
+.wrapper {
+  width: 900px;
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
+}
+
+ul{
+  padding-left: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.quiz {
+  padding: 20px;
+  position: relative;
+}
+
+.score {
+  position: absolute;
+  font-size: 24px;
+  text-align: left;
+}
+
+.mode {
+  text-align: end;
+  width: fit-content;
+  margin-left: auto;
+}
+.mode label {
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chord {
+  position: absolute;
+  top: 20px;
+  left: 55%;
+  display: inline-block;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #FFF;
+  border: solid 3px #555;
+  border-radius: 10px;
+  box-sizing: border-box;
+  z-index: 2;
+  cursor: pointer;
+  
+}
+
+.chord:before {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 1;
+  border-style: solid;
+  border-color: #FFF transparent;
+  border-width: 25px 25px 0 0;
+  bottom: -18px;
+  left: 25px;
+  margin-left: -10px;
+}
+
+.chord:after {
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 0;
+  border-style: solid;
+  border-color: #555 transparent;
+  border-width: 25px 25px 0 0;
+  bottom: -25px;
+  left: 25px;
+  margin-left: -13px;
+}
+
+
+.chord_text {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.rabit {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.rabit_img {
+  width: 35%;
+  display: block;
+  position: relative;
+}
+
+.carrot_img {
+  width: 50px;
+}
+
+.carrot_list {
+  margin-left: 20px;
+  visibility: hidden;
+}
+
+.carrot_list:hover {
+  opacity:0.5;
+	transition:0.3s;
+  cursor: pointer;
+}
+
+.input_area {
+  width:80%;
+  height: 46px;
+  display: flex;
+  background-color: white;
+  border: solid 2px #555; 
+  border-radius: 10px;
+  margin: 0 auto;
+  justify-content: end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.input {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 24px;
+}
+
+.check {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.check:hover {
+  opacity:0.5;
+	transition:0.3s;
+  cursor: pointer;
+}
+
+#keyboard {
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+.whitekey {
+  width: 7%;
+  height: 240px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #000;
+  background-color: white;
+}
+.whitekey:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.blackkey {
+  width: 6%;
+  height: 140px;
+  display: inline-block;
+  margin-left: -3%;
+  background-color: #000;
+  position: absolute;
+}
+.blackkey:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+
+button {
+  font-size: 28px;
+  margin: 10px 30px;
+  background-color: bisque;
+  border: none;
+
+}
+
+button:hover {
+  font-size: 28px;
+  background-color: bisque;
+  font-weight: bold;
+  color: #FFF;
+  cursor: pointer;
+
+}
